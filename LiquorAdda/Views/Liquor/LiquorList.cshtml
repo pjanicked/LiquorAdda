@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "LiquorList";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liquor List</title>
+</head>
+<body>
+
+    <section id="intro" class="clearfix">
+        <div class="container d-flex h-100">
+            <div class="row justify-content-center align-self-center"> <br /> <br /> <br />
+                <div class="col-md-4 intro-info order-md-first order-last">
+                    <h2>Scroll Down<br>to know <span>Prices!</span></h2>
+                    <div>
+                        <a href="#about" class="btn-get-started scrollto">See Prices</a>
+                    </div>
+                </div>
+                <div class="col-md-8 intro-img order-md-last order-first">
+                    <img src="~/Content/Images/L1.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <main id="main">
+        <section id="about">
+            <div>
+                <table id="liquorTable" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            @*<th class="hidden">Liquor Id</th>*@
+                            <th>Liquor Name</th>
+                            <th>Liquor Type</th>
+                            <th>Liquor Quantity</th>
+                            <th>Liquor Price</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+@section scripts {
+    <script>$(document).ready(function () {
+            var dt_table = $('#liquorTable').DataTable({
+                ajax: {
+                    url: '/Liquor/GetLiquorList',
+                    type: 'POST',
+                    dataSrc: ""
+                },
+                //columnDefs: [{ orderable: false, "targets": -1 }],
+                columns: [
+                    //{ data: "LiquorId", },
+                    { data: "LiquorName", },
+                    { data: "LiquorType", },
+                    { data: "LiquorQuantity", },
+                    { data: "LiquorPrice", },
+                ],
+                scrollX: true,
+            });
+
+
+        });</script>
+}
+

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Liquor Adda</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/DataTables/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/toastr.css" rel="stylesheet" type="text/css" />
+    <link href="~/Scripts/Template/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Scripts/Template/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="~/Scripts/Template/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="~/Scripts/Template/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/Scripts/Template/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="~/Scripts/Template/lib/style.css" rel="stylesheet">
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div id="topbar">
+            <div class="container">
+                <div class="social-links">
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo float-left col-lg-8">
+                <h1 class="text-light"><a href="#intro" class="scrollto"><span>Liquor Adda</span></a></h1>
+            </div>
+            <nav class="main-nav float-right d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="#intro">Home</a></li>
+                    <li><a href="#about">See Prices</a></li>
+                    <li><a href="#footer">Share</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                </ul>
+            </nav><!-- .main-nav -->
+        </div>
+    </header><!-- #header -->
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer id="footer" class="section-bg">
+            <div class="container">
+                <div class="copyright">
+                    Disclaimer: <strong>Prices are subjected to vary as per shop!</strong> <br />
+                    &copy; Copyright <strong>Liqour Adda</strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    <!--
+                      All the links in the footer should remain intact.
+                      You can delete the links only if you purchased the pro version.
+                      Licensing information: https://bootstrapmade.com/license/
+                      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+                    -->
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+            </div>
+        </footer><!-- #footer -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/toastr.min.js"></script>
+    <script src="~/Scripts/DataTables/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/DataTables/dataTables.bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.11.3.min.js"></script>
+    @*<script src="~/Scripts/Template/lib/jquery/jquery.min.js"></script>
+        <script src="~/Scripts/Template/lib/jquery/jquery-migrate.min.js"></script>
+        <script src="~/Scripts/Template/lib/bootstrap/js/bootstrap.bundle.min.js"></script>*@
+    <script src="~/Scripts/Template/lib/easing/easing.min.js"></script>
+    <script src="~/Scripts/Template/lib/mobile-nav/mobile-nav.js"></script>
+    <script src="~/Scripts/Template/lib/wow/wow.min.js"></script>
+    <script src="~/Scripts/Template/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/Scripts/Template/lib/counterup/counterup.min.js"></script>
+    <script src="~/Scripts/Template/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/Scripts/Template/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="~/Scripts/Template/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="~/Scripts/Template/lib/main.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
