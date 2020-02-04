@@ -16,7 +16,7 @@ namespace LiquorAdda
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Liqour", action = "LiquorList", id = UrlParameter.Optional }
+                defaults: new { controller = "Liquor", action = "LiquorList", id = UrlParameter.Optional }
             );
         }
     }
