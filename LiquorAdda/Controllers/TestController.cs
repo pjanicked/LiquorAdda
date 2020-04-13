@@ -13,5 +13,10 @@ namespace LiquorAdda.Controllers
         {
             return View();
         }
+
+        public ActionResult TestMethod()
+        {
+            return Json("test", JsonRequestBehavior.AllowGet);
+        }
     }
 }
